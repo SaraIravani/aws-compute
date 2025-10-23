@@ -1,0 +1,13 @@
+{
+  "ec2_instance": {
+    "id": "i-1234567890abcdef0",
+    "state": "running",
+    "type": "t3.micro"
+  },
+  "asg": {
+    "name": "test-asg",
+    "desired_capacity": 1,
+    "instances": ["i-1234567890abcdef0"]
+  }
+}
+

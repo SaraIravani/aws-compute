@@ -3,13 +3,18 @@ output "ec2_instance_id" {
   value       = module.ec2_instance.instance_id
 }
 
-output "ec2_public_ip" {
-  description = "Public IP of the EC2 instance"
-  value       = module.ec2_instance.public_ip
+output "launch_template_id" {
+  description = "ID of the Launch Template"
+  value       = module.launch_template.launch_template_id
 }
 
-output "ec2_private_ip" {
-  description = "Private IP of the EC2 instance"
-  value       = module.ec2_instance.private_ip
+output "asg_name" {
+  description = "Name of the Auto Scaling Group"
+  value       = module.autoscaling_group.asg_name
+}
+
+output "asg_arn" {
+  description = "ARN of the Auto Scaling Group"
+  value       = module.autoscaling_group.asg_arn
 }
 

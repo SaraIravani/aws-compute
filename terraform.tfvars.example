@@ -1,0 +1,29 @@
+# AWS Region
+region = "ca-central-1"
+
+# EC2 Instance Variables
+ec2_name         = "example-ec2"
+ec2_instance_type = "t3.medium"
+ec2_key_name     = "my-keypair"
+
+# Launch Template Variables
+launch_template_name = "example-lt"
+
+# Auto Scaling Group Variables
+asg_name         = "example-asg"
+asg_desired_capacity = 2
+asg_min_size     = 1
+asg_max_size     = 3
+
+# Networking (from AWS Network module)
+subnet_ids       = ["subnet-0123456789abcdef0", "subnet-0fedcba9876543210"]
+security_group_ids = ["sg-0123456789abcdef0"]
+
+# Tags
+tags = {
+  Environment = "dev"
+  Project     = "aws-compute"
+  ManagedBy   = "Terraform"
+  Owner       = "Sara-Iravani"
+}
+
